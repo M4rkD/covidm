@@ -3,7 +3,7 @@
 This repository provides the backend for the LSHTM SEI3R model, found at [[https://github.com/cmmid/covid-uk][this repository]], as an R package. This is an early work in progress, please report any issues.
 
 * System Requirements
-- The [[http://www.gnu.org/software/gsl/][GNU GSL]] library
+- The [[http://www.gnu.org/software/gsl/][GNU GSL]] library (e.g. libgsl0-dev on Debian or Ubuntu)
 - Rcpp
 
 * Installation
@@ -29,5 +29,9 @@ Currently, only functions and data sets used by the UK.R script from the [[https
 * UK.R Script
 The UK.R script is included in the repository, but not the installed package, for reference. The changes necessary to use covidm as a package have been made to the UK.R script. Note however that the script has been modified to hardcode only a single iteration of a single analysis, for two days, for demonstration purposes only. Note in particular, the file for age varying symptomatic rate has been changed.
 
-* Limitations
-Currently, this is only tested on linux systems. Please raise an issue if you're interested in a version to run on Windows or Mac.
+* Running on Windows or Mac
+Currently, this is not tested on Windows. If you still wish to go ahead, you should do so with gsl version 2.4.
+
+If you're interested in working on Windows, please raise an issue.
+
+The Mac installation has not yet been tested, but hopefully will be tested soon.
