@@ -1,0 +1,33 @@
+#+TITLE: Covidm Package
+
+This repository provides the backend for [[https://github.com/cmmid/covid-uk][this LSHTM SEI3R model]] as an R package.
+
+* System Requirements
+- GNU GSL
+
+Currently only tested on Ubuntu.
+
+* Installation
+
+You will first need to install the devtools package with:
+#+begin_src R
+install.packages("devtools")
+#+end_src
+
+After that, you an install the covidm package with:
+#+begin_src R
+devtools::install_github("M4rkD/covidm")
+#+end_src
+
+Once the installation completes, you can load (and attach) the package with:
+#+begin_src R
+library(covidm)
+#+end_src
+
+* Exported functions
+Currently, only functions and data sets used by the UK.R script from the [[https://github.com/cmmid/covid-uk][LSHTM covid-uk repository]] are export by this library, despite more functions being available internally. If you require more functions exported, please open an issue and I'll be happy to export them. The intention of this approach is to only export functions which are useful.
+
+Some of the datasets are provided with slightly modified names, compared to the original UK.R script. Please raise an issue if having a working copy of the original UK.R script is important to you.
+
+* Limitations
+Currently, this is only tested on linux systems. Please raise an issue if you're interested in a version to run on Windows or Mac.
