@@ -20,12 +20,12 @@ BEGIN_RCPP
 END_RCPP
 }
 // cm_evaluate_distribution
-Rcpp::DataFrame cm_evaluate_distribution(string dist_code, unsigned int steps, double xmin, double xmax);
+Rcpp::DataFrame cm_evaluate_distribution(std::string dist_code, unsigned int steps, double xmin, double xmax);
 RcppExport SEXP _covidm_cm_evaluate_distribution(SEXP dist_codeSEXP, SEXP stepsSEXP, SEXP xminSEXP, SEXP xmaxSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< string >::type dist_code(dist_codeSEXP);
+    Rcpp::traits::input_parameter< std::string >::type dist_code(dist_codeSEXP);
     Rcpp::traits::input_parameter< unsigned int >::type steps(stepsSEXP);
     Rcpp::traits::input_parameter< double >::type xmin(xminSEXP);
     Rcpp::traits::input_parameter< double >::type xmax(xmaxSEXP);

@@ -29,10 +29,10 @@ void ShowClockInfo()
     double total = 0;
     for (unsigned int i = 0; i < ClockTimes.size(); ++i)
     {
-        Rcout << "Checkpoint " << i << ": " << ClockTimes[i] << "\n";
+        Rcpp::Rcout << "Checkpoint " << i << ": " << ClockTimes[i] << "\n";
         total += ClockTimes[i];
     }
-    Rcout << "Total time: " << total << " seconds.\n";
+    Rcpp::Rcout << "Total time: " << total << " seconds.\n";
 }
 
 //

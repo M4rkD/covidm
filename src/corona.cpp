@@ -12,6 +12,7 @@
 #include <numeric>
 #include <ctime>
 #include <limits>
+#include <Rcpp.h>
 #include "../randomizer/randomizer.h"
 #include "../randomizer/distribution.h"
 using namespace std;
@@ -53,7 +54,7 @@ bool Observer::operator()(Parameters* parent, PopulationParameters& pp, double t
         if (ret.containsElementNamed("print"))
         {
             string message = as<string>(ret["print"]);
-            Rcout << message << '\n';
+            Rcpp:Rcout << message << '\n';
         }
         if (ret.containsElementNamed("csv"))
         {
