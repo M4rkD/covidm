@@ -29,10 +29,10 @@ void ShowClockInfo()
     double total = 0;
     for (unsigned int i = 0; i < ClockTimes.size(); ++i)
     {
-        cout << "Checkpoint " << i << ": " << ClockTimes[i] << "\n";
+        Rcout << "Checkpoint " << i << ": " << ClockTimes[i] << "\n";
         total += ClockTimes[i];
     }
-    cout << "Total time: " << total << " seconds.\n";
+    Rcout << "Total time: " << total << " seconds.\n";
 }
 
 //

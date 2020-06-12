@@ -53,7 +53,7 @@ bool Observer::operator()(Parameters* parent, PopulationParameters& pp, double t
         if (ret.containsElementNamed("print"))
         {
             string message = as<string>(ret["print"]);
-            cout << message << '\n';
+            Rcout << message << '\n';
         }
         if (ret.containsElementNamed("csv"))
         {
