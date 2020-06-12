@@ -1,6 +1,6 @@
 #+TITLE: Covidm Package
 
-This repository provides the backend for [[https://github.com/cmmid/covid-uk][this LSHTM SEI3R model]] as an R package.
+This repository provides the backend for [[https://github.com/cmmid/covid-uk][this LSHTM SEI3R model]] as an R package. This is an early work in progress, please report any issues.
 
 * System Requirements
 - GNU GSL
