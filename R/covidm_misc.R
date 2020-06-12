@@ -22,6 +22,7 @@ cm_mean_hdi = function(x, credMass = 0.95)
 }
 
 # construct a delay distribution following a gamma distribution with mean mu and shape parameter shape.
+#' @export
 cm_delay_gamma = function(mu, shape, t_max, t_step)
 {
     scale = mu / shape;
@@ -32,6 +33,7 @@ cm_delay_gamma = function(mu, shape, t_max, t_step)
 }
 
 # construct a delay distribution that effectively skips the compartment
+#' @export
 cm_delay_skip = function(t_max, t_step)
 {
     t_points = seq(0, t_max, by = t_step);
@@ -48,6 +50,7 @@ cm_interpolate_cos = function(x, x0, y0, x1, y1)
 # for a set of age group bounds age_bounds (including the lower and upper bound as well as intermediate bounds),
 # return a vector giving length(age_bounds) - 1 numerical entries between 0 and 1 inclusive, depending on how much
 # each age group lies within the range age_min to age_max.
+#' @export
 cm_age_coefficients = function(age_min, age_max, age_bounds)
 {
     x = rep(0, length(age_bounds) - 1);
@@ -126,6 +129,7 @@ cm_case_distribution = function(z, date_simulation_start, date_measurement_start
 }
 
 # Calculate R0 for a given population
+#' @export
 cm_calc_R0 = function(parameters, population) {
     po = parameters$pop[[population]];
     dIp = sum(po$dIp * seq(0, by = parameters$time_step, length.out = length(po$dIp)));

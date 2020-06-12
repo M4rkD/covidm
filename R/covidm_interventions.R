@@ -3,6 +3,7 @@
 
 # set up interventions
 # TODO remove reliance on cm_translate_parameters, for efficiency?
+#' @export
 cm_iv_build = function(parameters)
 {
     p = cm_translate_parameters(parameters)
@@ -31,6 +32,7 @@ cm_iv_contact = function(iv, ymd_iv_first_day, ymd_iv_last_day, cf)
 }
 
 # apply arbitrary interventions
+#' @export
 cm_iv_set = function(iv, ymd_iv_first_day, ymd_iv_last_day, ...)
 {
     changes = list(...);
@@ -66,6 +68,7 @@ cm_iv_set = function(iv, ymd_iv_first_day, ymd_iv_last_day, ...)
 
 # apply interventions to a parameter set
 # TODO merge with existing schedule
+#' @export
 cm_iv_apply = function(parameters, iv, populations = -1)
 {
     # Make schedule of interventions

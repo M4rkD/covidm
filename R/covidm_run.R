@@ -87,6 +87,7 @@ cm_annotate_dynamics = function(dynamics, parameters)
     return (dynamics);
 }
 
+#' @export
 # TODO -- in progress... interface likely to change.
 cm_simulate = function(parameters, n = 1, model_seed = 0)
 {

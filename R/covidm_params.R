@@ -170,6 +170,7 @@ cm_get_matrices = function(mat_location, dem_location = NULL)
 
 # Split matrices
 # ex_in: bounds separate into contacts *ex*clusively between lower groups, and *in*clusively between higher groups.
+#' @export
 cm_split_matrices_ex_in = function(parameters, bounds)
 {
     for (pi in seq_along(parameters$pop))
@@ -326,6 +327,7 @@ cm_base_parameters_SEI3R = function(n_groups = 1, pop = cm_base_pop_SEI3R(n_grou
 }
 
 # Build parameters for one or several locations, SEI3R model
+#' @export
 cm_parameters_SEI3R = function(dem_locations, mat_locations = "guess", date_start = "2020-03-01", date_end = "2021-03-01", deterministic = T, processes = NULL,
     dE = NULL, dIp = NULL, dIs = NULL, dIa = NULL, dH = NULL, dC = NULL, contact = NULL,
     u = NULL, y = NULL, fIp = NULL, fIa = NULL, fIs = NULL, rho = NULL, tau = NULL,
@@ -362,6 +364,7 @@ cm_parameters_SEI3R = function(dem_locations, mat_locations = "guess", date_star
 }
 
 # Get regions for the UK.
+#' @export
 cm_uk_locations = function(country, level) {
     # Check country code
     country = toupper(country);
