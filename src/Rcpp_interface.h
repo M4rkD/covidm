@@ -28,7 +28,7 @@ Rcpp::List cm_backend_simulate(Rcpp::List parameters, unsigned int n_run = 1, un
 }
 
 // [[Rcpp::export]]
-Rcpp::DataFrame cm_evaluate_distribution(string dist_code, unsigned int steps = 101, double xmin = 0, double xmax = -1)
+Rcpp::DataFrame cm_evaluate_distribution(std::string dist_code, unsigned int steps = 101, double xmin = 0, double xmax = -1)
 {
     Distribution dist(dist_code);
     if (xmax < xmin)
