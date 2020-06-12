@@ -2,6 +2,7 @@
 # various useful functions
 
 # Wrappers around qs to save/load an R object.
+#' @export
 cm_save = function(x, file) {
     qsave(x, file, "balanced");
 }
