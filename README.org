@@ -1,11 +1,10 @@
 #+TITLE: Covidm Package
 
-This repository provides the backend for [[https://github.com/cmmid/covid-uk][this LSHTM SEI3R model]] as an R package. This is an early work in progress, please report any issues.
+This repository provides the backend for the LSHTM SEI3R model, found at [[https://github.com/cmmid/covid-uk][this repository]], as an R package. This is an early work in progress, please report any issues.
 
 * System Requirements
-- GNU GSL
-
-Currently only tested on Ubuntu.
+- The [[http://www.gnu.org/software/gsl/][GNU GSL]] library
+- Rcpp
 
 * Installation
 
