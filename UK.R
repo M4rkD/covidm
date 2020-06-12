@@ -491,6 +491,6 @@ for (r in run_set) {
       }
     }
 }
-cm_save(totals, paste0(covid_uk_path, analysis, "-totals", ifelse(option.single > 0, option.single, ""), ".qs"));
-cm_save(dynamics, paste0(covid_uk_path, analysis, "-dynamics", ifelse(option.single > 0, option.single, ""), ".qs"));
+cm_save(totals, paste0(analysis, "-totals", ifelse(option.single > 0, option.single, ""), ".qs"));
+cm_save(dynamics, paste0(analysis, "-dynamics", ifelse(option.single > 0, option.single, ""), ".qs"));
 print(Sys.time())
