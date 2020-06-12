@@ -213,11 +213,7 @@ if (analysis == 1) {
 
     # Define interventions to be used
     interventions = list(
-        `School Closures`   = list(contact = c(1.0, 1.0, 0.0, 1.0,  1.0, 1.0, 0.0, 1.0,  0)),
-        `Social Distancing` = list(contact = c(1.0, 0.5, 1.0, 0.5,  1.0, 0.5, 1.0, 0.5,  0)),
-        `Elderly Shielding` = list(contact = c(1.0, 1.0, 1.0, 1.0,  1.0, 0.25, 1.0, 0.25,  0)),
-        `Self-Isolation`    = list(fIs = rep(0.65, 16)),
-        `Combination`       = list(contact = c(1.0, 0.5, 0.0, 0.5,  1.0, 0.25, 0.0, 0.25,  0), fIs = rep(0.65, 16))
+        `School Closures`   = list(contact = c(1.0, 1.0, 0.0, 1.0,  1.0, 1.0, 0.0, 1.0,  0))
     );
 
     # Set options
