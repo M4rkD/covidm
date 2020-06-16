@@ -27,6 +27,7 @@ cm_translate_parameters = function(p)
 }
 
 # check parameters for validity.
+#' @export
 cm_check_parameters = function(parameters)
 {
     req = function(v, x)

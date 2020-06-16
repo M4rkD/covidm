@@ -2,6 +2,7 @@
 
 export(cm_age_coefficients)
 export(cm_calc_R0)
+export(cm_check_parameters)
 export(cm_delay_gamma)
 export(cm_delay_skip)
 export(cm_iv_apply)
