@@ -15,7 +15,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
 LinkingTo: 
     Rcpp,
-    RcppGSL
+    RcppGSL,
+    data.table
 Imports:
     Rcpp,
     RcppGSL,
